@@ -22,9 +22,8 @@ request.get("http://13.233.151.2:8000/", (err, res, body) => {
 
 //POST request withut using html page
 
-Var1 = "Mango"
 
-var data = '{ "request" : "msg", "data" : "India" }';
+var data = '{ "request" : "msg", "data" : "Mango" }';
 var json_obj = JSON.parse(data);
 request.post({
     headers: {'content-type': 'application/json'},
