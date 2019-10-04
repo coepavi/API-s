@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://35.154.253.198:4000/data", function(data,status,xhr){
+        console.log("Resp: " + status);
+        console.log("Data: " + xhr);
+        console.log("Data: " + data);
+        document.getElementById("temp").value = data;
+    });
+  });
+});
+</script>
+</head>
+
+<body>
+<input type="text" id="temp" >
+<button>Data</button>
+
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $.get("http://35.154.253.198:4000/getfx", function(data,status,xhr){
+          console.log("Data: " + data);
+            console.log("Data: " + data.a);
+            document.getElementById("USD").value = data.a;
+            document.getElementById("GBP").value = data.b;
+            document.getElementById("INR").value = data.c;
+    });
+  });
+});
+</script>
+</head>
+<body>
+<h1>FX rates</h1><br>
+<p>USD</p>
+<input type="text" id="USD"><br>
+<p>GBP</p>
+<input type="text" id="GBP"><br>
+<p>INR</p>
+<input type="text" id="INR"><br>
+<button>Get live FX data</button>
+</body>
+</html>
