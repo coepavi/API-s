@@ -1,0 +1,4 @@
+timestamp,transaction_type,token,amount,,
+1521106922,DEPOSIT,ETH,4,,
+1521116922,WITHDRAWAL,ETH,6,,
+1521126922,WITHDRAWAL,BTC,1,,
