@@ -1,0 +1,6 @@
+Issue : if import requests in python fails (ImportError: No module named requests)
+
+Solution: Install python-requestes in ubuntu
+          sudo apt-get install python-requests
+          
+Python can call either GET / POST nodejs API. Data can be sent from python to NodeJS API
